@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биздин мугалимдер</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение ваших стилей, если есть -->
+</head>
+
+<body>
+    <!-- Контейнеры для шапки и футера -->
+    <div id="header-container"></div>
+
+    <section id="teachers">
+        <h1>Биздин мугалимдер</h1>
+        <!-- Содержимое страницы "Биздин мугалимдер" -->
+
+        <div class="teacher">
+            <img src="images/arslan.png" alt="Фотография учителя 1">
+            <h3> Арслан Ибрагимов</h3>
+            <p> Сүрдү жеңүү, Медитация</p>
+        </div>
+    
+        <!-- Пример второго учителя -->
+        <div class="teacher">
+            <img src="images/chagaldak.png" alt="Фотография учителя 2">
+            <h3>Чагалдак Замирбеков</h3>
+            <p>Речь, текст менен иштөө, туура дем алуу</p>
+        </div>
+    
+        <!-- Пример третьего учителя -->
+        <div class="teacher">
+            <img src="images/maks.jpeg" alt="Фотография учителя 3">
+            <h3>Максат Тулеев</h3>
+            <p>Камера алдында иштөө, ынандыруу техникасы</p>
+        </div>
+    
+        <!-- Добавьте других учителей по мере необходимости -->
+
+    </section>
+
+    <div id="footer-container"></div>
+
+    <!-- Подключение шапки и футера с использованием JavaScript и AJAX -->
+    <script>
+        // Функция для загрузки содержимого
+        function loadContent(file, containerId) {
+            var container = document.getElementById(containerId);
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    container.innerHTML = xhr.responseText;
+                }
+            };
+
+            xhr.open("GET", file, true);
+            xhr.send();
+        }
+
+        // Загрузка шапки
+        loadContent('header.html', 'header-container');
+
+        // Загрузка футера
+        loadContent('footer.html', 'footer-container');
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

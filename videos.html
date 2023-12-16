@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео сабактар</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение ваших стилей, если есть -->
+</head>
+
+<body>
+    <!-- Контейнеры для шапки и футера -->
+    <div id="header-container"></div>
+
+    <section>
+        <h1>Видео сабактар</h1>
+        <!-- Содержимое страницы "Видео сабактар" -->
+    </section>
+
+    <div id="footer-container"></div>
+
+    <!-- Подключение шапки и футера с использованием JavaScript и AJAX -->
+    <script>
+        // Функция для загрузки содержимого
+        function loadContent(file, containerId) {
+            var container = document.getElementById(containerId);
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    container.innerHTML = xhr.responseText;
+                }
+            };
+
+            xhr.open("GET", file, true);
+            xhr.send();
+        }
+
+        // Загрузка шапки
+        loadContent('header.html', 'header-container');
+
+        // Загрузка футера
+        loadContent('footer.html', 'footer-container');
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

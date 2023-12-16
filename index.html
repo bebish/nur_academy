@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы ораторского искусства</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" id="bashkybet-link">Башкы бет</a>
+                <a href="#" id="courses-link">Биздин курстар</a>
+                <a href="#" id="teachers-link">Биздин мугалимдер</a>
+                <a href="#" id="videos-link">Видео сабактар</a>
+            </div>
+              
+              <!-- Используйте любой элемент для открытия боковой навигации -->
+            <div class="menu-toggle">  
+                <span onclick="openNav()" style="font-size: 40px;">☰</span>
+            </div>
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+            </div>
+
+            <div class="company-name">
+                <h1>Nur academy</h1>
+            </div>
+
+            <div class="login-section">
+                <a href="#">Кирүү</a>
+                <span class="divider">|</span>
+                <a href="#">Катталуу</a>
+            </div>
+        </div>
+
+        <!-- <nav class="mobile-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Наши курсы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+
+
+    <div class="body">
+        <section id="about">
+            <h1>"NUR" академиясы - максаттуу жаштар уясы</h1>
+            <p>Нурзат Токтосунова тарабынан негизделген "Нур" академиясы 10 жыл ичинде 36000 бүтүрүүчүнү чыгарды. Эл алдында эркин сүйлөө, дикцияны туура коюу, сүрдөнүүнү жеңүү, алып баруучулук, вокал. </p>
+        </section>
+
+        <section id="saamalyktar">
+            <h2>Жакынкы саамалыктар:</h2>
+        </section>
+
+
+            <!-- Контейнер слайд-шоу -->
+        <div class="slideshow-container">
+
+            <!-- Полноразмерные изображения с числом и текстом подписи -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/img1.jpg" style="width:100%">
+            <div class="text">Подпись текст</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/img2.jpg" style="width:100%">
+            <div class="text">Подпись два</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/img3.jpg" style="width:100%">
+            <div class="text">Подпись три</div>
+            </div>
+        
+            <!-- Вперед и назад кнопки -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- Точки/круги -->
+        <div style="text-align:center" class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <section id="contact">
+            <h2>Байланыш маалыматтары</h2>
+            <address>
+                Email: <a href="mailto:info@oratorycourses.com">info@oratorycourses.com</a><br>
+                Телефон: +(996) 700 000 000
+            </address>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nur_academy/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://m.facebook.com/p/NUR-Academy-100063649494809/?locale=ms_MY" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://wa.me/996709868000 " target="_blank">
+                    <img src="images/whatsap.com.png" alt="whatsap">
+                </a>
+                <!-- Добавьте другие социальные сети по необходимости -->
+            </div>
+
+        </section>
+        <p>&copy; 2023 Оратордук чеберчилик курстары</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
