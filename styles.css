@@ -211,6 +211,14 @@ header {
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
 }
 
+
+.company-name-h {
+    margin-right: 75%; /* Добавьте единицы измерения, например, px */
+    font-family: 'Whisper', sans-serif;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
+}
+
+
 .login-section a {
     color: #020202;
     text-decoration: none;

@@ -76,3 +76,14 @@ document.getElementById("videos-link").addEventListener("click", function() {
 
 
 
+
+
+document.getElementById("login-link").addEventListener("click", function() {
+  window.location.href = "login.html";
+  closeNav(); // Закрываем меню после перехода
+});
+
+document.getElementById("register-link").addEventListener("click", function() {
+  window.location.href = "register.html";
+  closeNav(); // Закрываем меню после перехода
+});
